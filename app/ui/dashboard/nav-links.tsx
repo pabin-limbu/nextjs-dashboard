@@ -18,11 +18,12 @@ const links = [
     icon: DocumentDuplicateIcon,
   },
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'test', href: '/dashboard/test', icon: UserGroupIcon },
 ];
 
 export default function NavLinks() {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
   return (
     <>
       {links.map((link) => {
